@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_light"
+    tools:context="cn.zhudai.zin.css.activity.UploadInfoActivity">
+    <TextView
+        android:id="@+id/tv_tip"
+        style="@style/item_head_tipText"
+        />
+    <LinearLayout
+
+        style="@style/item_input_layout"
+        android:background="@color/white"
+        android:layout_marginBottom="2dp">
+        <TextView
+           style="@style/item_input_tiptext"
+            android:text="姓名"/>
+        <EditText
+            style="@style/item_input_edittext"
+            android:id="@+id/et_name"
+            />
+    </LinearLayout>
+    <LinearLayout
+
+        style="@style/item_input_layout"
+        android:background="@color/white">
+        <TextView
+            style="@style/item_input_tiptext"
+            android:text="工作城市"/>
+        <EditText
+            style="@style/item_input_edittext"
+            android:id="@+id/et_city"
+            android:editable="false"
+            android:clickable="true"
+            android:drawableRight="@drawable/select_icon"
+            android:drawablePadding="@dimen/space_25"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="请上传个人照片"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_size_16"
+        android:layout_marginLeft="@dimen/space_25"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="100dp"
+
+        >
+        <TextView
+            style="@style/item_input_tiptext"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="个人照片"
+
+           />
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_uplaodImg"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            app:civ_border_width="2dp"
+            android:layout_marginRight="@dimen/space_25"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_uplaod_default"
+            app:civ_border_color="@color/white"/>
+       <!-- <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_click_load"
+            android:layout_marginRight="@dimen/space_25"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_uplaodImg"/>-->
+    </RelativeLayout>
+    <Button
+        style="@style/item_sumit_button"
+        android:layout_marginTop="25dp"
+        android:id="@+id/bt_next"
+        android:text="下一步"/>
+</LinearLayout>

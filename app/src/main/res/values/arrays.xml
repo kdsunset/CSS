@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="starlevel">
+        <item>请选择客户星级</item>
+        <item>1星</item>
+        <item>2星 </item>
+        <item>3星</item>
+        <item>4星</item>
+        <item>5星</item>
+    </string-array>
+    <string-array name="processstate">
+        <item>请选择处理状态</item>
+        <item>未处理</item>
+        <item>贷款资质不符</item>
+        <item>待签约</item>
+        <item>已签约</item>
+        <item>银行已放款</item>
+        <item>银行已拒绝</item>
+        <item>审核中</item>
+        <item>待跟进</item>
+        <item>已上门</item>
+        <item>捣乱申请</item>
+    </string-array>
+    <string-array name="marrystate">
+        <item>请选择</item>
+        <item>已婚</item>
+        <item>未婚/离异</item>
+
+    </string-array>
+    <string-array name="repayment_ways">
+        <item>请选择</item>
+        <item>等额本息</item>
+        <item>先息后本</item>
+
+    </string-array>
+    <string-array name="profession_type">
+        <item>请选择</item>
+        <item>工薪族</item>
+        <item>生意人</item>
+        <item>无固定职业</item>
+    </string-array>
+    <string-array name="payroll_form">
+        <item>请选择</item>
+        <item>银行转账</item>
+        <item>银行代发</item>
+        <item>现金发放</item>
+    </string-array>
+    <string-array name="social_security">
+        <item>请选择</item>
+        <item>无社保无公积金</item>
+        <item>有社保有公积金</item>
+        <item>有社保无公积金</item>
+        <item>无社保有公积金</item>
+    </string-array>
+    <string-array name="working_years">
+        <item>请选择</item>
+        <item>0-6个月（含）</item>
+        <item>6个月-1年（含）</item>
+        <item>1-3年（含）</item>
+        <item>3年以上</item>
+    </string-array>
+    <string-array name="car_years">
+        <item>请选择</item>
+        <item>0-6个月（含）</item>
+        <item>6个月-1年（含）</item>
+        <item>1-2年（含）</item>
+        <item>2-3年（含）</item>
+        <item>3-5年（含）</item>
+        <item>5-10年（含）</item>
+        <item>10年以上</item>
+    </string-array>
+    <string-array name="house_situation">
+        <item>请选择</item>
+        <item>无房产</item>
+        <item>商品住宅</item>
+        <item>商铺</item>
+        <item>宅基地/自建房产、其他</item>
+    </string-array>
+    <string-array name="insurance_company">
+        <item>请选择</item>
+        <item>中国人寿</item>
+        <item>新华人寿</item>
+        <item>平安人寿</item>
+        <item>泰安人寿</item>
+        <item>中国人保</item>
+        <item>友邦人寿</item>
+        <item>阳光人寿</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="max_sum">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+        <item>80</item>
+        <item>100</item>
+        <item>200</item>
+    </string-array>
+</resources>

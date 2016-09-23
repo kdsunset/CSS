@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activity.AuthenticationResultActivity">
+
+    <TextView
+        android:id="@+id/tv_tip"
+        style="@style/item_head_tipText"
+        android:background="@color/gray_light"
+        android:textSize="@dimen/text_size_16"
+        android:gravity="left|center"
+        android:paddingLeft="@dimen/space_25"
+        android:paddingRight="@dimen/space_25"
+        />
+
+    <include layout="@layout/view_nav_bottom"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"/>
+
+</LinearLayout>

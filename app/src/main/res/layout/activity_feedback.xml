@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_light"
+    tools:context="cn.zhudai.zin.css.activity.FeedbackActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="@dimen/space_5"
+        android:layout_marginRight="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_2"
+        android:layout_marginBottom="@dimen/space_10">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/et_border_shape"
+            android:lines="12"
+            android:gravity="left"
+            android:id="@+id/tv_feedback"
+            android:textSize="@dimen/text_size_16"/>
+
+    </LinearLayout>
+    <Button
+        style="@style/item_sumit_button"
+        android:text="提 交"
+        android:id="@+id/bt_sumit"/>
+
+</LinearLayout>

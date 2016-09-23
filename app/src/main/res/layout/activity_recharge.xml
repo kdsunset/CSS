@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cn.zhudai.zin.css.activity.RechargeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:paddingTop="@dimen/space_20"
+        android:paddingRight="@dimen/space_25"
+        android:paddingLeft="@dimen/space_25"
+        android:paddingBottom="@dimen/space_20"
+       >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账户余额（元）"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16"
+                android:layout_marginBottom="@dimen/space_20"/>
+
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100.00"
+
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_22"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:textColor="@color/black"
+            android:text="详情"
+            android:id="@+id/tv_detail"
+            android:background="@drawable/border_shape"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <include layout="@layout/view_divider_gray_5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+       >
+        <TextView
+            style="@style/item_input_tiptext"
+            android:text="*金额"
+            android:id="@+id/tv_jine"
+            />
+        <EditText
+           style="@style/item_input_edittext"
+            android:id="@+id/et_recharge_account"
+            android:hint="请输入充值金额"
+
+            android:layout_centerInParent="true"/>
+        <TextView
+            style="@style/item_input_tiptext"
+            android:layout_marginRight="@dimen/space_25"
+            android:text="元"
+           />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/gray_light">
+        <Button
+            style="@style/item_sumit_button"
+            android:id="@+id/bt_next"
+            android:text="下一步"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_25"
+        android:layout_marginTop="@dimen/space_20"
+        android:layout_marginBottom="@dimen/space_15"
+        android:textSize="@dimen/text_size_18"
+        android:textColor="@color/black"
+        android:text="客户分配规则"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_25"
+        android:layout_marginRight="@dimen/space_25"
+        android:id="@+id/tv_tip"
+        android:text="客户充值成功后，助贷网将按照每条数据0.00元
+        向您分配客户数据，您可以随时暂停和开启客户的推送，每条数据分配
+        成功后，将从账户扣除0.00元！"/>
+</LinearLayout>

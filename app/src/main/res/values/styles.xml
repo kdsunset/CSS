@@ -1,0 +1,103 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+
+  <!--  &lt;!&ndash; Base application theme. &ndash;&gt;
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>-->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+       <item name="android:windowNoTitle">true</item>
+        <!-- 使用 API Level 22 編譯的話，要拿掉前綴字 -->
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/red_nor</item>
+        <item name="colorPrimaryDark">@color/red_nor</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"-->
+    <style name="item_input_edittext">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/space_25</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:paddingLeft">10dp</item>
+    </style>
+    <!-- android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:layout_marginLeft="@dimen/space_25"
+        android:layout_marginRight="@dimen/space_25"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"-->
+    <style name="item_input_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/space_50</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <!-- android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="设置登录密码"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_16"-->
+    <style name="item_input_tiptext">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/space_25</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+    <!--android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_35"
+        android:layout_marginRight="@dimen/space_35"
+        android:layout_marginTop="65dp"
+        android:text="确  定"
+        android:textColor="@color/white"
+        android:id="@+id/bt_sumit"
+        android:background="@drawable/bt_red_selector"
+
+        android:textSize="@dimen/text_size_22"-->
+    <style name="item_sumit_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/space_35</item>
+        <item name="android:layout_marginRight">@dimen/space_35</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/bt_red_selector</item>
+        <item name="android:textSize">@dimen/text_size_22</item>
+    </style>
+    <!-- android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:id="@+id/tv_tip"
+        android:textColor="@color/black"
+        android:lineSpacingMultiplier="1.2"
+        android:gravity="center"-->
+    <style name="item_head_tipText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">75dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+
+</resources>
